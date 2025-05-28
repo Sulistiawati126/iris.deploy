@@ -1,4 +1,4 @@
 import stremlit as st
 
-st.set_page_config(page_title="Dashboard")
-st.title_(
+st.set_page_config(page_title="Halamandua")
+st.title("tes")
