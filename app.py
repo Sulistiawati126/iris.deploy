@@ -63,10 +63,10 @@ elif menu == "📈 Visualisasi Data":
 
     plot_type = st.selectbox("Pilih jenis plot:", ["Pairplot", "Heatmap Korelasi"])
 
-    if plot_type == "Pairplot":
-        st.write("### Pairplot berdasarkan Spesies")
-        fig = sns.pairplot(df, hue="species")
-        st.pyplot(fig)
+   if plot_type == "Pairplot":
+    st.write("### Pairplot berdasarkan Spesies")
+    pairplot_fig = sns.pairplot(df, hue="species")
+    st.pyplot(pairplot_fig.figure)
     elif plot_type == "Heatmap Korelasi":
         st.write("### Korelasi antara fitur")
         fig, ax = plt.subplots()
