@@ -58,16 +58,16 @@ elif menu == "🔮 Prediksi":
         st.success(f"🌼 Spesies yang diprediksi: **{species_name}**")
 
 # Halaman 3: Visualisasi
-elif menu == "📈 Visualisasi Data":
+if menu == "📈 Visualisasi Data":
     st.header("📈 Visualisasi Data Iris")
 
     plot_type = st.selectbox("Pilih jenis plot:", ["Pairplot", "Heatmap Korelasi"])
 
-   if plot_type == "Pairplot":
-    st.write("### Pairplot berdasarkan Spesies")
-    pairplot_fig = sns.pairplot(df, hue="species")
-    st.pyplot(pairplot_fig.figure)
-       
+    if plot_type == "Pairplot":
+        st.write("### Pairplot berdasarkan Spesies")
+        pairplot_fig = sns.pairplot(df, hue="species")
+        st.pyplot(pairplot_fig.figure)
+
     elif plot_type == "Heatmap Korelasi":
         st.write("### Korelasi antara fitur")
         fig, ax = plt.subplots()
