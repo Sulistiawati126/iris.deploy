@@ -23,8 +23,8 @@ df["target"] = iris.target
 df["species"] = df["target"].map(dict(enumerate(iris.target_names)))
 
 # Konfigurasi halaman
-st.set_page_config(page_title="Iris Classifier", layout="centered")
-st.title("🌸 Iris Classification App - All in One")
+st.set_page_config(page_title="halamandua", layout="centered")
+st.title("🌸 halamandua App - All in One")
 
 # Pilihan halaman
 menu = st.radio("Pilih Halaman:", ["📊 Deskripsi Data", "🔮 Prediksi", "📈 Visualisasi Data"])
