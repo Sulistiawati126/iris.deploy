@@ -67,6 +67,7 @@ elif menu == "📈 Visualisasi Data":
     st.write("### Pairplot berdasarkan Spesies")
     pairplot_fig = sns.pairplot(df, hue="species")
     st.pyplot(pairplot_fig.figure)
+       
     elif plot_type == "Heatmap Korelasi":
         st.write("### Korelasi antara fitur")
         fig, ax = plt.subplots()
